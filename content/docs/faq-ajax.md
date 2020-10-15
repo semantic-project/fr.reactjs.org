@@ -71,7 +71,7 @@ class MyComponent extends React.Component {
     } else {
       return (
         <ul>
-          {items.map(item => (
+          {items && items.map(item => (
             <li key={item.name}>
               {item.name} {item.price}
             </li>
@@ -119,7 +119,7 @@ function MyComponent() {
   } else {
     return (
       <ul>
-        {items.map(item => (
+        {items && items.map(item => (
           <li key={item.name}>
             {item.name} {item.price}
           </li>
